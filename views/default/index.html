@@ -1,0 +1,44 @@
+{{extend 'layout.html'}}
+<h1><p ></p>Wellcome To Our University Website &#129303;</p></h1>
+{{=BEAUTIFY(response._vars)}}
+
+{{extend 'layout.html'}}
+
+{{for course in courses:}}
+
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+
+<body>
+   
+    <table>
+     
+        <tr>
+            <td> <h5>{{=course['name']}}</h5>  <td></td></td>
+         
+            <td></td>
+           
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p2>{{=course['code']}}</p2></td>
+          
+           
+            <td></td>
+           
+            <td></td>
+        </tr>
+    </table>
+    {{pass}}
+</body>
+
